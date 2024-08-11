@@ -66,7 +66,7 @@ const Contact = () => {
               <p className='uppercase text-gray-800 pt-4'>Connect With Us</p>
               <div className='flex space-x-4 pt-4'>
                 <a
-                  href='https://www.linkedin.com/company/your-company' // Replace with your LinkedIn URL
+                  href='https://www.linkedin.com/in/nexus-system-461674320/' 
                   target='_blank'
                   rel='noopener'
                 >
@@ -75,7 +75,7 @@ const Contact = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/your-company' // Replace with your GitHub URL
+                  href='' 
                   target='_blank'
                   rel='noopener'
                 >
@@ -84,7 +84,7 @@ const Contact = () => {
                   </div>
                 </a>
                 <a
-                  href='mailto:info@yourcompany.com' // Replace with your email address
+                  href='nexussystem83@gmail.com' 
                   target='_blank'
                   rel='noopener'
                 >
@@ -92,7 +92,7 @@ const Contact = () => {
                     <AiOutlineMail className='text-red-500' />
                   </div>
                 </a>
-                <Link href='/about'>
+                <Link href=''>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-white'>
                     <BsFillPersonLinesFill className='text-gray-700' />
                   </div>

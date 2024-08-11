@@ -123,7 +123,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  href='https://www.linkedin.com/in/nexus-system-461674320/'
                   target='_blank'
                   rel='noopener'
                 >
@@ -132,7 +132,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href=''
                   target='_blank'
                   rel='noopener'
                 >
@@ -140,7 +140,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
                     <FaGithub />
                   </div>
                 </a>
-                <Link href='/#contact'>
+                <Link href='nexussystem83@gmail.com'>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
@@ -148,7 +148,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
+                <Link href=''>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
