@@ -30,18 +30,7 @@ const Project = () => {
           >
             CMSProjects
           </button>
-          <button
-            onClick={() => setSelectedCategory('wordpress')}
-            className={`px-4 py-2 ${selectedCategory === 'backend' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          >
-            UI/UX
-          </button>
-          <button
-            onClick={() => setSelectedCategory('shopify')}
-            className={`px-4 py-2 ${selectedCategory === 'backend' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          >
-            Branding
-          </button>
+         
           
               </div>
               
