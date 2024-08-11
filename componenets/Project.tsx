@@ -2,16 +2,16 @@ import React, { useState} from 'react'
 import Image from 'next/image';
 import ProjectItem from './ProjectItem';
 import { frontendProjects } from '@/data/ProjectList';
-import { BackendProjects } from '@/data/ProjectList';
+import {  CMSProjects } from '@/data/ProjectList';
 
 
 const Project = () => {
     const [selectedCategory, setSelectedCategory] = useState('frontend');
     
-      const projectsToDisplay = selectedCategory === 'frontend' ? frontendProjects : BackendProjects;
+      const projectsToDisplay = selectedCategory === 'frontend' ? frontendProjects : CMSProjects;
 
   return (
-      <div id='projects' className='w-full py-20'>
+      <div id='projects' className='w-full py-20' style={{ backgroundImage: '', backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh' }}>
           <div className='max-w-[1240px] mx-auto px-2 py-20'>
             <h1 className='text-xl tracking-widest uppercase text-[#5651e5]'>
                   Projects
@@ -19,17 +19,30 @@ const Project = () => {
               <h2 className='py-4'>What We Have Built</h2>
                <div className="flex gap-4 mb-8">
           <button
-            onClick={() => setSelectedCategory('frontend')}
+            onClick={() => setSelectedCategory('Frontend')}
             className={`px-4 py-2 ${selectedCategory === 'frontend' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
           >
-            Frontend
+            Software Development
           </button>
           <button
-            onClick={() => setSelectedCategory('backend')}
+            onClick={() => setSelectedCategory('CMSProjects')}
+            className={`px-4 py-2 ${selectedCategory === 'CMSProjects' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+          >
+            CMSProjects
+          </button>
+          <button
+            onClick={() => setSelectedCategory('wordpress')}
             className={`px-4 py-2 ${selectedCategory === 'backend' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
           >
-            Backend
+            UI/UX
           </button>
+          <button
+            onClick={() => setSelectedCategory('shopify')}
+            className={`px-4 py-2 ${selectedCategory === 'backend' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+          >
+            Branding
+          </button>
+          
               </div>
               
               <div className = "grid md:grid-cols-2 gap-8">

@@ -38,15 +38,7 @@ const ProjectPopUp: React.FC<PopupProps> = ({ isOpen, onClose ,project}) => {
             {project.description}
           </p>
           <div className="mt-4 flex flex-col gap-2">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="px-8 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
-                Code
-              </button>
-            </a>
+           
             <a
               href={project.demoUrl}
               target="_blank"
@@ -54,6 +46,15 @@ const ProjectPopUp: React.FC<PopupProps> = ({ isOpen, onClose ,project}) => {
             >
               <button className="px-8 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition">
                 Demo
+              </button>
+            </a>
+             <a
+              href='/#contact'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-8 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+                Contact Us
               </button>
             </a>
           </div>

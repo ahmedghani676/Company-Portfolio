@@ -29,40 +29,39 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
      <div
     
       className={
-         'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
+         'fixed w-full h-30 shadow-xl z-[100] ease-in-out duration-300'
         
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/'>
-         
+        <Link href='/'>         
             <Image
-              src=''
+              src='/Immm.jpg'
               alt='/'
-              width='125'
-              height='50'
-              className='cursor-pointer'
+              width={125}
+              height={30}
+              className='cursor-pointer background-hidden'
             />
-         
         </Link>
+
         <div>
           <ul  className='hidden md:flex'>
            {navItems.map((item, index) => (
               <Link key={index} href={item.link}>
-                <ul className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                <ul className="text-blue-500 text-lg hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-bold ">
                   {item.name}
                 </ul>
               </Link>
             ))}
            
           </ul>
-          {/* Hamburger Icon */}
+
           <div
            
             onClick={Handle}
-            className='md:hidden'
+            className='md:hidden '
           >
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu color = "purple" size={25} />
           </div>
         </div>
       </div>
@@ -87,7 +86,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
               <Link href='/'>
               
                   <Image
-                    src=''
+                    src='/Immm.jpg'
                     width='87'
                     height='35'
                     alt='/'
@@ -96,7 +95,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
               </Link>
               <div
                 onClick={Handle}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className='rounded-full shadow-lg text-black shadow-gray-400 p-3 cursor-pointer'
               >
                 <AiOutlineClose />
               </div>
@@ -111,7 +110,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
             <ul className='uppercase'>
               {navItems.map((item, index) => (
               <Link key={index} href={item.link}>
-                <li className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                <li className="text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"  onClick={() => setNav(!nav)}>
                   {item.name}
                 </li>
               </Link>

@@ -13,31 +13,40 @@ const Testimonial = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-      slidesToScroll: 3,
-    
+    slidesToShow: 2,  // Changed to 2 for better responsiveness
+    slidesToScroll: 2,  // Changed to 2 for better responsiveness
+    autoplay: true,  // Optional: Adds autoplay for a better user experience
+    autoplaySpeed: 3000,  // Optional: Duration for each slide
+    responsive: [
+      {
+        breakpoint: 768,  // For small screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
+
   return (
-   
-     <div id='testimonial' className='w-3/4 m-auto'>
-           
-            <div className='mt-20'>
-                <Slider {...settings}>
-                    {reviewItems.map((item, index) => (
-                        <div key={index} className='bg-white h-[450px] text-black rounded-xl '>
-                            <div className='h-56 rounded-t-xl bg-indigo-500 flex justify-center items-center'>
-                                <Image src={item.link} width={200} height={200} alt='/' className='h-44 w-44 rounded-full'/>
-                            </div>
-                            <div className='flex flex-col items-center justify-center gap-4 p-4'>
-                                <p className='text-xl font-semibold'>{item.name}</p>
-                                <p>{item.review}</p>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+    <div id='testimonial' className='bg-slate-50 w-full  p-8 mx-auto py-16 px-4'>
+      <h2 className='text-3xl font-bold text-center mb-8 text-[#333]'>What Our Clients Say</h2>
+      <Slider {...settings} className="overflow-hidden">
+        {reviewItems.map((item, index) => (
+          <div key={index} className='bg-white shadow-lg rounded-lg p-6 mx-4'>
+            <div className='flex justify-center items-center mb-4'>
+              <Image src={item.link} width={100} height={100} alt={item.name} className='rounded-full border-4 border-indigo-500' />
             </div>
-        </div>
-  )
+            <div className='text-center'>
+              <p className='text-lg font-semibold mb-2'>{item.name}</p>
+              <p className='text-gray-600'>{item.review}</p>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+
 }
 
 export default Testimonial
