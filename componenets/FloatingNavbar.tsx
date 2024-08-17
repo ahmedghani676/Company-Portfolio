@@ -36,7 +36,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>         
             <Image
-              src='/Immm.jpg'
+              src='/imge.jpg'
               alt='/'
               width={125}
               height={30}

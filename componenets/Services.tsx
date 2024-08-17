@@ -14,13 +14,12 @@ const Services: React.FC<ServicesProps> = ({ servicesList }) => {
    
   return (
      <div
-      className=' bg-cover bg-center'
-      style={{ backgroundImage: 'url(/bgimage.jpg)',minHeight: '50vh' }}
+      className=' bg-cover bg-center bg-black'
       // Update the path to your image
     >
       <div id='services' className='w-full min:h-screen  p-2 bg-opacity-60'>
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-          <h1 className='text-3xl lg:text-4xl tracking-widest uppercase text-white mb-8'>
+          <h1 className='text-3xl lg:text-4xl tracking-widest uppercase text-[#5651e5] mb-8'>
             Services
           </h1>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12'>

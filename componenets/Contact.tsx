@@ -5,6 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { LiaJenkins } from 'react-icons/lia';
 
 const Contact = () => {
   const [status, setStatus] = useState('');
@@ -41,7 +42,7 @@ const Contact = () => {
     >
       <div className='absolute inset-0 bg-black bg-opacity-50'></div> {/* Overlay for better text visibility */}
       <div className='relative z-10 max-w-[1240px] m-auto px-4 py-16'>
-        <h1 className='text-xl tracking-widest uppercase text-[#5651e5]'>
+        <h1 className='text-3xl tracking-widest uppercase text-[#5651e5]'>
           Contact Us
         </h1>
         <h2 className='py-4 text-white text-3xl md:text-4xl font-bold'>
@@ -74,24 +75,15 @@ const Contact = () => {
                     <FaLinkedinIn className='text-blue-600' />
                   </div>
                 </a>
-                <a
-                  href='' 
-                  target='_blank'
-                  rel='noopener'
-                >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-white'>
-                    <FaGithub className='text-gray-800' />
-                  </div>
-                </a>
-                <a
-                  href='nexussystem83@gmail.com' 
-                  target='_blank'
-                  rel='noopener'
+               
+                <Link
+                  href='/#contact' 
+                 
                 >
                   <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-white'>
                     <AiOutlineMail className='text-red-500' />
                   </div>
-                </a>
+                </Link>
                 <Link href=''>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-white'>
                     <BsFillPersonLinesFill className='text-gray-700' />
