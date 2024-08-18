@@ -29,7 +29,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
      <div
     
       className={
-         'fixed w-full h-30 shadow-xl z-[100] ease-in-out duration-300'
+         'fixed w-full h-30 shadow-xl z-[100] ease-in-out duration-300 bg-black'
         
       }
     >
@@ -86,7 +86,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
               <Link href='/'>
               
                   <Image
-                    src='/Immm.jpg'
+                    src='/imge.jpg'
                     width='87'
                     height='35'
                     alt='/'
@@ -131,16 +131,8 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
                     <FaLinkedinIn />
                   </div>
                 </a>
-                <a
-                  href=''
-                  target='_blank'
-                  rel='noopener'
-                >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaGithub />
-                  </div>
-                </a>
-                <Link href='nexussystem83@gmail.com'>
+              
+                <Link href='/#contact'>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'

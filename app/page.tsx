@@ -11,6 +11,7 @@ import { ServicesList } from "@/data/ServicesList";
 import Services from "@/componenets/Services";
 import Project from "@/componenets/Project";
 import Testimonial from "@/componenets/Testimonial";
+import Footer from "@/componenets/Footer";
 const FloatingNav = dynamic(() => import('../componenets/FloatingNavbar'), { ssr: false });
 
 export default function Home() {
@@ -25,7 +26,8 @@ export default function Home() {
       <Services servicesList={ServicesList} />
       <Project />
       <Testimonial/>
-      <Contact/>
+      <Contact />
+      <Footer/>
      </div>
       
      

@@ -7,8 +7,7 @@ import {  CMSProjects } from '@/data/ProjectList';
 
 const Project = () => {
     const [selectedCategory, setSelectedCategory] = useState('frontendProjects');
-    
-      const projectsToDisplay = selectedCategory === 'frontendProjects' ? frontendProjects : CMSProjects;
+    const projectsToDisplay = selectedCategory === 'frontendProjects' ? frontendProjects : CMSProjects;
 
   return (
       <div id='projects' className='w-full py-20' style={{ backgroundImage: '', backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh' }}>
@@ -20,13 +19,13 @@ const Project = () => {
                <div className="flex gap-4 mb-8">
           <button
             onClick={() => setSelectedCategory('frontendProjects')}
-            className={`px-4 py-2 ${selectedCategory === 'frontendProjects' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+            className={`px-4 py-2 ${selectedCategory === 'frontendProjects' ? 'bg-blue-500 text-white shadow-none' : 'bg-gray-200 shadow-none'}`}
           >
             Software Development
           </button>
           <button
             onClick={() => setSelectedCategory('CMSProjects')}
-            className={`px-4 py-2 ${selectedCategory === 'CMSProjects' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+            className={`px-4 py-2 ${selectedCategory === 'CMSProjects' ? 'bg-blue-500 text-white shadow-none' : 'bg-gray-200 shadow-none'}`}
           >
             CMSProjects
           </button>
