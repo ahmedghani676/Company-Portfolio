@@ -1,7 +1,7 @@
 
 export const imageList = [
-  { name: "Wordpress", link: "/word.jpg" },
-  { name: "Shopify", link: "/shop.jpg" },
+  { name: ".Netcore", link: "/downloads.png" },
+  { name: "Nodejs", link: "/node.png" },
   { name: "Javascript", link: "/javascript.png" },
   { name: "React", link: "/react.png" },
   { name: "Tailwend", link: "/tailwind.png" },

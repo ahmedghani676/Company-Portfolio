@@ -30,7 +30,7 @@ const Testimonial = () => {
 
   return (
     <div id='testimonial' className='bg-black w-full  p-8 mx-auto py-16 px-4'>
-      <h2 className='text-3xl font-bold text-center mb-8 text-[#5651e5]'>What Our Clients Say</h2>
+      <h2 className='text-3xl font-bold text-center mb-8 text-[#5651e5]'>Linkedln Reviews</h2>
       <Slider {...settings} className="overflow-hidden">
         {reviewItems.map((item, index) => (
           <div key={index} className='bg-white shadow-lg rounded-lg p-6 mx-4'>

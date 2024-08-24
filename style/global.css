@@ -36,4 +36,15 @@ html {
     .slide{
         margin: 0 10px;
     }
+    .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 }

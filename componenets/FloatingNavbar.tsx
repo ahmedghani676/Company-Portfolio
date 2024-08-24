@@ -36,11 +36,11 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>         
             <Image
-              src='/imge.jpg'
+              src='/personalimg.jpg'
               alt='/'
-              width={125}
-              height={30}
-              className='cursor-pointer background-hidden'
+              width={60}
+              height={50}
+              className='cursor-pointer background-hidden rounded'
             />
         </Link>
 
@@ -86,7 +86,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
               <Link href='/'>
               
                   <Image
-                    src='/imge.jpg'
+                    src='/personalimg.jpg'
                     width='87'
                     height='35'
                     alt='/'

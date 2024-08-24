@@ -23,12 +23,7 @@ const Project = () => {
           >
             Software Development
           </button>
-          <button
-            onClick={() => setSelectedCategory('CMSProjects')}
-            className={`px-4 py-2 ${selectedCategory === 'CMSProjects' ? 'bg-blue-500 text-white shadow-none' : 'bg-gray-200 shadow-none'}`}
-          >
-            CMSProjects
-          </button>
+          
          
           
               </div>

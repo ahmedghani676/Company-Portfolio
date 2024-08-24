@@ -54,20 +54,20 @@ const Contact = () => {
             <div className='flex flex-col items-center'>
               <Image
                 className='rounded-full'
-                src='/iii.jpg' 
-                alt='Company Profile'
+                src='/personalimg.jpg' 
+                alt='personal Profile'
                 width={220}
                 height={200}
               />
-              <h2 className='py-4 text-2xl font-semibold text-gray-800'>Nexus System</h2>
+              <h2 className='py-4 text-2xl font-semibold text-gray-800'>Ahmed Ghani</h2>
               <p className='text-gray-600'>Consistency Hardwork Dedication!</p>
               <p className='py-4 text-gray-600'>
-                We are dedicated to providing innovative solutions and top-notch services. Whether you have a question, a project inquiry, or just want to say hello, we’re here to assist you.
+                I am dedicated to providing innovative solutions and top-notch services. Whether you have a question, a project inquiry, or just want to say hello, I m’re here to assist you.
               </p>
-              <p className='uppercase text-gray-800 pt-4'>Connect With Us</p>
+              <p className='uppercase text-gray-800 pt-4'>Connect With Me</p>
               <div className='flex space-x-4 pt-4'>
                 <a
-                  href='https://www.linkedin.com/in/nexus-system-461674320/' 
+                  href='https://www.linkedin.com/in/ahmed-ghani-962238217' 
                   target='_blank'
                   rel='noopener'
                 >
@@ -96,7 +96,7 @@ const Contact = () => {
           {/* Right Section */}
           <div className='w-full bg-white shadow-xl shadow-gray-400 rounded-xl p-6 lg:p-8'>
             <form
-              action='https://formspree.io/f/xldrnwng'
+              action='https://formspree.io/f/mpwaogya'
               method='POST'
               onSubmit={handleSubmit}
               encType='multipart/form-data'

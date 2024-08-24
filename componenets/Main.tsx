@@ -21,9 +21,9 @@ const Main  = () => {
         <div className='relative z-10 text-center '>
           <TypeAnimation
             sequence={[
-              `Welcome to Nexus Systems!`,
+              `Ahmed Ghani Here!`,
               2000,
-              `We are Professional Engineers`,
+              `Software Engineer`,
               2000,
               `LET'S BUILD SOMETHING AMAZING`,
               2000,
@@ -48,7 +48,7 @@ const Main  = () => {
             <p className='text-white text-lg mb-4'>Your trusted partner for innovative solutions and engineering excellence.</p>
             <div className='flex items-center justify-center gap-6'>
              <a
-                href='https://www.linkedin.com/in/nexus-system-461674320/'
+                href='https://www.linkedin.com/in/ahmed-ghani-962238217'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='rounded-full bg-white p-4 cursor-pointer hover:bg-gray-200 transition-colors duration-300'
@@ -70,7 +70,7 @@ const Main  = () => {
             <div className='mt-8'>
               <Link href='/#contact'>
                 <div className='bg-blue-600 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-700 transition-colors duration-300'>
-                  Contact Us
+                  Contact Me
                 </div>
               </Link>
             </div>
