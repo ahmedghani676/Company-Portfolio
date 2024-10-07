@@ -54,7 +54,7 @@ const Contact = () => {
             <div className='flex flex-col items-center'>
               <Image
                 className='rounded-full'
-                src='/personalimg.jpg' 
+                src='/get_in_touch.png' 
                 alt='personal Profile'
                 width={220}
                 height={200}

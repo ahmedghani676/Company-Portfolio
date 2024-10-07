@@ -34,15 +34,9 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/'>         
-            <Image
-              src='/personalimg.jpg'
-              alt='/'
-              width={60}
-              height={50}
-              className='cursor-pointer background-hidden rounded'
-            />
-        </Link>
+        <h3>
+          Ahmed
+       </h3>
 
         <div>
           <ul  className='hidden md:flex'>
@@ -83,16 +77,7 @@ const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
-              
-                  <Image
-                    src='/personalimg.jpg'
-                    width='87'
-                    height='35'
-                    alt='/'
-                  />
-             
-              </Link>
+             <h3>Ahmed</h3>
               <div
                 onClick={Handle}
                 className='rounded-full shadow-lg text-black shadow-gray-400 p-3 cursor-pointer'

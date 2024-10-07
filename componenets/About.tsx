@@ -10,7 +10,7 @@ const About = () => {
         <div className='flex items-center justify-center bg-gray-100 p-4 rounded-lg shadow-lg'>
           <div className='w-full max-w-md'>
             <Image
-              src="/know.png"
+              src="/iuy.jpg"
               width={500}
               height={300}
               className='object-cover rounded-lg'
