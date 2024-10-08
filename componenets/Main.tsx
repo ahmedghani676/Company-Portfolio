@@ -30,7 +30,7 @@ const Main = () => {
          
           <div className="mt-4">
             <p className="text-white text-lg mb-4">
-              I have over 2 years of experience in web technologies \n. Super passionate about beautiful UI, intuitive UX design, and maintaining a good workflow through APIs. I believe in high quality, simplicity, collaboration, and tight feedback loops.
+              I have over 2 years of experience in web technologies. Super passionate about beautiful UI, intuitive UX design, and maintaining a good workflow through APIs. I believe in high quality, simplicity, collaboration, and tight feedback loops.
             </p>
             <div className="flex items-center justify-center gap-6">
               <a
