@@ -82,34 +82,34 @@ const Services: React.FC<ServicesProps> = ({ servicesList }) => {
   ];
 
   return (
-    <section id="experince" className="relative py-16 px-4 bg-black text-white">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#5651e5]">Experience</h2>
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-600 w-1 h-full top-0" />
+    <section id="experience" className="relative py-16 px-4 bg-black text-white">
+  <div className="container mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-12 text-[#5651e5]">Experience</h2>
+    <div className="relative">
+      {/* Timeline Line */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-600 w-1 h-full top-0" />
 
-          {/* Timeline Items */}
-          <div className="relative">
-            {experiences.map((item, index) => (
-              <div key={index} className="relative mb-6 flex items-start">
-                {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-500 w-3 h-3 rounded-full" />
-                
-                {/* Experience Card */}
-                <div className="bg-gray-800 shadow-lg rounded-lg p-4 w-80 ml-6">
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-400">{item.company}</p>
-                   <p className="text-gray-500 mt-2">{item.date}</p>
-                  <p className="text-gray-300 mt-2">{item.description}</p>
-                 
-                </div>
-              </div>
-            ))}
+      {/* Timeline Items */}
+      <div className="relative">
+        {experiences.map((item, index) => (
+          <div key={index} className="relative mb-6 flex flex-col md:flex-row items-start">
+            {/* Timeline Dot */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-500 w-3 h-3 rounded-full" />
+
+            {/* Experience Card */}
+            <div className="bg-gray-800 shadow-lg rounded-lg p-4 w-full md:w-80 md:ml-6">
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-400">{item.company}</p>
+              <p className="text-gray-500 mt-2">{item.date}</p>
+              <p className="text-gray-300 mt-2">{item.description}</p>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
   );
 
 
