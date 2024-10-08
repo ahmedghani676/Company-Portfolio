@@ -7,14 +7,14 @@ export  const frontendProjects = [
       githubUrl: '',
       tech: 'ReactJS',
     }
-   ,
+  ,
     {
-      title: 'Netflix App',
-      backgroundImg: '/netflix.jpg',
-      demoUrl: 'https://fireclint.github.io/netflix-react-tailwind/',
-      description : 'This app features user authentication with firebase as well as the firestore cloud storage database. This application is pulling movie data from an the IMDB movie API and displaying different categories. It features horizontal sliding and a featured selection. The useContext hook is also being implemented for app-wide statemanagement.',
+      title: 'Schedule Edge',
+      backgroundImg: '/sche.jpg',
+      demoUrl: 'https://demo.cipherimpact.com',
+      description : 'schedule edge is a construction based management system 🪙 where a client booked their project that how many doors they have in which area , floors they want to allocate their doors , doorframes and handles etc',
       githubUrl: '',
-      tech: 'React JS & Tailwend css',
+      tech: 'React JS , Tailwend css , Nodejs And .NetCore',
     },
     {
       title: 'Twitch UI',
